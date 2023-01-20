@@ -6,7 +6,15 @@ Args:
 Return: 
   Int: answer
 */
-  return 0;
+  int s = 0;
+  for (int i = 0; i < numbers.length; i++) {
+    if (i % 2 == 0) {
+      s += numbers[i];
+    }
+  }
+  return s.toInt();
 }
 
-void main() {}
+void main() {
+  print(func([5, 3, 2, 8, 5]));
+}
