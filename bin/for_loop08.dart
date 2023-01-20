@@ -8,7 +8,17 @@ Args:
 Return: 
   Int: answer
 */
-  return 0;
+
+  int s = 0;
+  for (int i = k; i < n; i++) {
+    if (numbers[i] % 2 == 1) {
+      s += numbers[i];
+    }
+  }
+
+  return s;
 }
 
-void main() {}
+void main() {
+  print(func([7, 7, 2, 5, 1, 6], 2, 6));
+}
