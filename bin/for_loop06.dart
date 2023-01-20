@@ -8,7 +8,14 @@ Args:
 Return: 
   Int: answer
 */
-  return 0;
+  int s = 0;
+  for (int i = k; i < n; i++) {
+    s += numbers[i];
+  }
+
+  return s;
 }
 
-void main() {}
+void main() {
+  print(func([1, 2, 3, 4, 5], 0, 3));
+}
