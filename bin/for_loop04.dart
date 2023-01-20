@@ -12,7 +12,7 @@ Return:
       s += numbers[i];
     }
   }
-  return s.toInt();
+  return s;
 }
 
 void main() {
